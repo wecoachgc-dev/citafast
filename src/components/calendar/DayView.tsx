@@ -13,7 +13,7 @@ const STATUS_COLORS = {
   cancelled: { bg: '#1f0000', border: '#ff4444', text: '#ff4444', label: '✗ Cancelada' },
 }
 
-const HOURS = Array.from({ length: 15 }, (_, i) => i + 7) // 7:00 → 21:00
+const HOURS = Array.from({ length: 18 }, (_, i) => i + 6) // 6:00 → 23:00
 
 export default function DayView({ appointments, onSelect, onNew }: Props) {
   if (appointments.length === 0) {
