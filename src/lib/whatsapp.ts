@@ -23,8 +23,8 @@ export function buildMessage(
   const fecha = format(date, "EEEE d 'de' MMMM", { locale: es })
   const hora = appointment.time
 
-  const confirmUrl = `${APP_URL}/confirm/${appointment.confirm_token}/yes`
-  const cancelUrl = `${APP_URL}/confirm/${appointment.confirm_token}/no`
+  const confirmUrl = `${APP_URL}/api/confirm/${appointment.confirm_token}/yes`
+  const cancelUrl = `${APP_URL}/api/confirm/${appointment.confirm_token}/no`
 
   const base = business.whatsapp_message_template
     .replace('{nombre}', appointment.client.name.split(' ')[0])
